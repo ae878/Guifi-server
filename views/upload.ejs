@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+
+</head>
+
+<body>
+
+ <form action="/video/upload" method="post" enctype="multipart/form-data">
+
+    <br>guide id <input type="text" name="userid"></br>
+    <br>제목 <input type="text" name="title"></br>
+    <br>테마
+    <select name="theme">
+        <option value="익사이팅">익사이팅</option>
+        <option value="로맨틱">로맨틱</option>
+        <option value="힐링">힐링</option>
+        <option value="해피">해피</option>
+    </select></br>
+    <br>소요 시간 <input type="radio" name="time" value="1시간미만">1시간미만
+                <input type="radio" name="time" value="2시간">2시간
+                <input type="radio" name="time" value="3시간">3시간
+                <input type="radio" name="time" value="4시간">4시간
+                <input type="radio" name="time" value="5시간">5시간
+                <input type="radio" name="time" value="6시간">6시간
+                <input type="radio" name="time" value="7시간이상">7시간이상
+            </br>
+    <br>가능 요일 <input type="checkbox" name="day" value="월">월
+                <input type="checkbox" name="day" value="화">화
+                <input type="checkbox" name="day" value="수">수
+                <input type="checkbox" name="day" value="목">목
+                <input type="checkbox" name="day" value="금">금
+                <input type="checkbox" name="day" value="토">토
+                <input type="checkbox" name="day" value="일">일
+    </br>
+    <br>가격 <input type="text" name="price"></br>
+    <br>태그 <input type="text" name="tag"></br>
+    <br>설명 <textarea name="description" cols="40" rows="5"></textarea></br>
+    <p>
+
+    비디오 :
+
+    <input type="file" name="VRvideo">
+
+    <p>
+
+    사진 :
+    <input type="file" name="images">
+
+    <input type="file" name="images">
+
+    <input type="file" name="images">
+
+
+    <p>
+
+    <input type="submit" value="Upload">
+
+ </form>
+
+</body>
+
+</html>
